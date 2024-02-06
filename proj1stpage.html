@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    
+    <title>Smart Home Dashboard</title>
+    <style>
+        body {
+           
+           margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+           
+            background-color: white;
+            
+           
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .device button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Smart Home Dashboard</h1>
+    </header>
+
+    <main>
+        <section class="device-control">
+            <h2>Device Control</h2>
+            <div class="device">
+                <h3>Smart Lights</h3>
+                <button id="lightOn">Turn On</button>
+                <button id="lightOff">Turn Off</button>
+            </div>
+   
+        </section>
+
+        <section class="energy-monitoring">
+            <h2>Energy Monitoring</h2>
+            <div class="energy-stats">
+                <button id="power">Power Consumption</button><br><br>
+                <button id="usage">Total Usage</button>
+            </div>
+        </section>
+
+        <section class="security">
+            <h2>Security</h2>
+            <div class="security-device">
+                <h3>Security Camera</h3>
+                <p>Status: <span id="cameraStatus">Offline</span></p>
+                <button id="toggleCamera">Toggle Camera</button>
+            </div>
+        
+        </section>
+    </main>
+
+   
+
+    
+</body>
+
+</html>
